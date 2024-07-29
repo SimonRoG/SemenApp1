@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <title>Firma</title>
+</head>
+<body>
+    <div id="header">
+        <a href="index" id="firma">Firma</a>
+        <div class="dropdown">
+            <span>
+                <svg width="60" height="45">
+                    <rect x="5" y="5" rx="5" ry="5" width="50" height="10" fill="white"/>
+                    <rect x="5" y="20" rx="5" ry="5" width="50" height="10" fill="white"/>
+                    <rect x="5" y="35" rx="5" ry="5" width="50" height="10" fill="white"/>
+                </svg>
+            </span>
+            <div class="dropdown-content">
+                <ul class="dropdown-list">
+                    <li class="button"><a href="index">Homepage</a></li>
+                    <li class="button"><a href="formular">Formular</a></li>
+                    <li class="button"><a href="index#about">Über uns</a></li>
+                    <li class="button"><a href="index#footer">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Formular</h1>
+        <form>
+            <select name="gender" id="gender">
+                <option value="Herr">Herr</option>
+                <option value="Frau">Frau</option>
+            </select><br>
+            <label for="fname">Vorname:</label><br>
+            <input class="textinput" type="text" id="fname" name="fname"><br>
+            <label for="lname">Nachname:</label><br>
+            <input class="textinput" type="text" id="lname" name="lname"><br>
+            <label for="email">E-Mail:</label><br>
+            <input class="textinput" type="email" id="email" name="email"placeholder="examle@b-a-e.eu"><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea class="textinput" id="message" name="message" rows="6"></textarea><br>
+            
+
+            <br><input type="submit" value="Senden">
+        </form>
+    </div>
+    <div class="paralax""></div>
+    <div class="content" id="footer">
+        <h1>Kontakt</h1>
+        <p>Telefonnummer</p>
+        <p>E-mail</p>
+        <p>Adresse</p>
+    </div>
+
+</body>
+</html>
