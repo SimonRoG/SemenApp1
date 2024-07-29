@@ -1,0 +1,114 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  padding-top: 40px;
+}
+
+#header{
+  background-image: linear-gradient(to bottom left, #ff9900, #ffff00);
+  position: fixed; 
+  margin-top: -80px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+#firma{
+  font: italic small-caps bold 45px Georgia, serif;
+  color: black;
+  text-decoration: none;
+}
+
+#firma:hover {
+  text-shadow: 1px 1px 2px #606060;
+}
+
+.paralax {
+  min-height: 60%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('xp.jpg');
+}
+
+.paralax.main {
+  height:100%;
+}
+
+.phrase {
+  padding: 0px 25px;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  z-index: 0;
+}
+
+.phrase:before {
+  background: #ddddddaa;
+  border-radius: 40px;
+  content: "";
+  filter: blur(10px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.content {
+  scroll-margin-top: 80px;
+  padding: 1% 2%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  float: left;
+}
+
+.dropdown-content {
+  border: solid black 2px;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  background-color: white;
+  min-width: 150px;
+  padding: 15px;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-list {
+  border: solid black 1px;
+  margin: 0;
+}
+
+.dropdown-content .button {
+  border: solid black 1px;
+  list-style-type: none;
+  margin: 0px 0px 0px -40px;
+  padding: 10px;
+  text-align: center;
+}
+
+select {
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.textinput {
+  width: 100%;
+  padding: 2px 4px;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+  background-color: #fafafa;
+  resize: none;
+}
